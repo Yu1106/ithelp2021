@@ -45,7 +45,7 @@ class ApplyScholarshipServiceCodeFirstTest {
         // 執行
         new ApplyScholarshipServiceCodeFirst(checker, repository).apply(applicationForm);
 
-        // 驗證：真的完全有 create 過
+        // 驗證：真的完全沒有 create 過
         verify(repository, never()).create(applicationForm);
     }
 }
